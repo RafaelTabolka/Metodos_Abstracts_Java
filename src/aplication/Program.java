@@ -14,18 +14,17 @@ public class Program {
 
 		Scanner sc = new Scanner(System.in);
 
-		System.out.print("Insira a quantidade de pessoas a cadastrar os dados: ");
+		List<CommonsAttributes> list = new ArrayList<>();
+		
+		char register;
+		do {
+		System.out.print("Insira a quantidade de pessoas, físicas ou jurídicas, a cadastrar os dados: ");
 		int n = sc.nextInt();
 
 		while (n < 0) {
 			System.out.print("Quantidade inválida. Digite novamente: ");
 			n = sc.nextInt();
 		}
-
-		List<CommonsAttributes> list = new ArrayList<>();
-
-		char register;
-		do {
 			for (int i = 0; i < n; i++) {
 				System.out.println();
 
